@@ -1,0 +1,213 @@
+
+%nav.navbar.navbar-white
+  .container-fluid
+    / Brand and toggle get grouped for better mobile display
+    .navbar-header
+      %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+    / Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav
+        %li.active
+          %a{:href => "#"}
+            %font{:color => "#000000"}Home
+            %span.sr-only (current)
+        %li
+          %a{:href => "#"}
+            %font{:color => "#000000"}Blog
+        %li.dropdown
+          %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+            %font{:color => "#000000"}Products
+            %font{:color => "#000000"}
+              %span.caret
+          %ul.dropdown-menu
+            %li
+              %a{:href => "#"} Action
+            %li
+              %a{:href => "#"} Another action
+            %li
+              %a{:href => "#"} Something else here
+            %li.divider{:role => "separator"}
+            %li
+              %a{:href => "#"} Separated link
+            %li.divider{:role => "separator"}
+            %li
+              %a{:href => "#"} One more separated link
+      %form.navbar-form.navbar-left
+        .form-group
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a{:href => "#"}
+            %font{:color => "#000000"}Log In
+       
+        %li
+          %a{:href => "#"}
+            %font{:color => "#000000"}|
+
+        %li
+          = link_to  "#", class: 'btn-link' do
+            %font{:color => "#000000"}
+              %i.fa.fa-shopping-basket{"aria-hidden" => "true"}
+            %font{:color => "#000000"}Card
+
+
+      .vegetable
+        %font{:color => "#33CC00"} Vege
+        %font{:color => "#000000"}Shop
+
+
+
+
+    / /.navbar-collapse
+  / /.container-fluid
+
+.jumbotron
+%div{:style => "background:url(http://www.ayser.com.tr/wp-content/uploads/2014/09/organic-Food.jpg); width:920px; height:400px;-moz-border-radius:10px;"}
+  %div{:style => "padding:20px 20px 20px 20px;"}
+    %h2 Organic Store
+    %h4 Vegetarian shop with organic food
+
+    = link_to  "#", class: 'btn btn-red' do
+
+      SEARCH OUR STORE
+      %i.fa.fa-arrow-right{"aria-hidden" => "true"}
+%br
+%br
+%font{:color => "#000000", :size => "4px"}New products
+%nav{"aria-label" => "..."}
+%br
+  %li
+    %a{:href => "#"}
+
+      %font{:color => "#33CC00"}
+        %u
+          %br
+          ALL PRODUCTS
+  %li
+    %a{:href => "#"}
+      %font{:color => "#666666" , :size => "1px" ,:weight =>"5"} FRUITS
+  %li
+    %a{:href => "#"}
+      %font{:color => "#666666"}VEGETABLES
+  %li
+    %a{:href => "#"}
+      %font{:color => "#666666"}OTHER
+%br
+
+#dis_bolme
+  .ic_bolme
+    %div{:style => "background:url(http://cdn1.ntv.com.tr/gorsel/4njKxqLCSUG3L9ibeJmfGA.jpg?width=100&height=100&mode=crop&scale=both&v=20150602160155060&meta=square); width:100px; height:100px;"}
+      %div{:style => "padding:20px 20px 20px 20px;"}
+    %h7 MUSHROOMS -1KG
+    =link_to "$9.50","#" , class: 'btn btn-linkk'
+  .ic_bolme
+    %div{:style => "background:url(http://www.bitkipet.net/image/cache/data/kabak%20balkaba%C4%9F%C4%B1%20sindirella-100x100.jpg); width:100px; height:100px;border-radius:  40px/10px;"}
+      %div{:style => "padding:20px 20px 20px 20px;"}
+    %h7 PUMPKIN -1KG
+    =link_to "$3.00","#" , class: 'btn btn-linkk'
+  .ic_bolme
+    %div{:style => "background:url(http://www.salatatarifleri.net/wp-content/uploads/2015/09/sarimsak-100x100.jpg); width:100px; height:100px;"}
+      %div{:style => "padding:20px 20px 20px 20px;"}
+    %h7 GARLIC -2 OR 4 BULBS
+    =link_to "$4.60","#" , class: 'btn btn-linkk'
+  .ic_bolme
+    %div{:style => "background:url(http://cdn1.ntv.com.tr/gorsel/yVbl5uCP40iZIa8rAnkG5Q.jpg?width=100&height=100&mode=crop&scale=both&v=20150617012950566&meta=square); width:100px; height:100px;"}
+      %div{:style => "padding:20px 20px 20px 20px;"}
+    %h7 GREEN PEA -1KG
+    =link_to "$12.90","#" , class: 'btn btn-linkk'
+#dis_bolme2
+  .ic_bolme
+    %div{:style => "background:url(http://selimlersebze.com/pic/100x100/patlican-1665.jpg); width:100px; height:100px;"}
+      %div{:style => "padding:20px 20px 20px 20px;"}
+    %h7 AUBERGINE -500G
+    %p
+      %del $3.50
+      =link_to "$2.95","#" , class: 'btn btn-linkk'
+
+
+  .ic_bolme
+    %div{:style => "background:url(http://evdeekisilani.com/wp-content/uploads/2016/01/kereviz-zayiflama-100x100.jpg); width:100px; height:100px;"}
+      %div{:style => "padding:20px 20px 20px 20px;"}
+    %h7 CELERY -1KG
+    =link_to "$5.57","#" , class: 'btn btn-linkk'
+  .ic_bolme
+    %div{:style => "background:url(http://www.tohhum.com/urunresimler/8803kirmizi-biber_w100_h100.jpg); width:100px; height:100px;"}
+      %div{:style => "padding:20px 20px 20px 20px;"}
+    %h7 PAPRIKA MIX -1KG
+    =link_to "$6.45","#" , class: 'btn btn-linkk'
+  .ic_bolme
+    %div{:style => "background:url(http://alimentazionebambini.e-coop.it/wp-content/uploads/2013/05/Patate-novelle-100x100.jpg); width:100px; height:100px;border-radius:  40px/10px;"}
+      %div{:style => "padding:20px 20px 20px 20px;"}
+    %h7 POTATOES -1KG
+    =link_to "$2.33","#" , class: 'btn btn-linkk'
+
+#dis_bolme3
+
+  = link_to  "#", class: 'btn btn-white' do
+    SHOW MORE
+.img
+  %div{:style => "background:url(http://www.ensonsaat.com/wp-content/uploads/cilde-iyi-gelen-meyve-ve-sebzeler1.jpg); width:800px; height:400px;"}
+    %div{:style => "padding:20px 20px 20px 20px;"}
+      %font{:color => "#FF0000",:size => "9px"}  Fresh products with certification
+      %h4
+        %font{:color => "#FF0000", :size =>"5px"} We offer the highest quality organic products
+
+%br
+  %br
+%font{:color => "#000000", :size =>"5px"} What our custumor think
+#dis_bolme4
+
+  .ic_bolmee
+    %h6 Your products are awesome!
+    %h2{:align => "center"}
+
+  .ic_bolmee
+    %h6 I will definitely recommend your shop to my friends.
+
+  .ic_bolmee
+    %h6 Really fresh and tasty fruits.I love it.
+.container
+  .row
+    .col-xs-6.col-sm-4.col-md-3.col-lg-2
+      %img.img-circle{:src => "http://s1.dmcdn.net/BkI3i/60x60-B06.jpg"}
+      %br
+        Sarah T.
+    .col-xs-6.col-sm-4.col-md-3.col-lg-2
+      %img.img-circle{:src => "http://s2.dmcdn.net/HPqOk/60x60-hOC.jpg"}
+      %br
+        Thomas B.
+    .col-xs-6.col-sm-4.col-md-3.col-lg-2
+      %img.img-circle{:src => "http://www.uzmanlar.com/assets/Facebook-sahte-profil1-60x60.jpg?9e6032"}
+      %br
+        Katherine P.
+
+.jumbotron
+%div{:style => "background:url(http://www.kaliteliresimler.com/data/media/4058/guzel_koy_manzarasi.jpg); width:920px; height:600px;-moz-border-radius:10px; style=float:left"}
+  %div{:style => "padding:20px 20px 20px 20px;"}
+
+
+  / lg => 3 + 3 + 3 + 3 = 12
+  .row
+  .col-xs-6.col-sm-4.col-md-3.col-lg-2 Contact
+  .col-xs-6.col-sm-4.col-md-3.col-lg-2 Shop
+  .col-xs-6.col-sm-4.col-md-3.col-lg-2 Shoppig
+  .col-xs-6.col-sm-4.col-md-3.col-lg-2 VegeShop  87-100 Torun
+  .col-xs-6.col-sm-4.col-md-3.col-lg-2 Products
+  .col-xs-6.col-sm-4.col-md-3.col-lg-2 Delivery time
+  .col-xs-6.col-sm-4.col-md-3.col-lg-2 Warzywna 5/6
+  .col-xs-6.col-sm-4.col-md-3.col-lg-2 Blog
+  .col-xs-6.col-sm-4.col-md-3.col-lg-2 Cost of Delivery
+  .col-xs-6.col-sm-4.col-md-3.col-lg-2 +47 791 054 214
+  .col-xs-6.col-sm-4.col-md-3.col-lg-2 Help
+  .col-xs-6.col-sm-4.col-md-3.col-lg-2 Payments method
+  .col-xs-6.col-sm-4.col-md-3.col-lg-2
+  .col-xs-6.col-sm-4.col-md-3.col-lg-2 Terms
+  .col-xs-6.col-sm-4.col-md-3.col-lg-2 Complaints and returns
+
+
+
+
+
