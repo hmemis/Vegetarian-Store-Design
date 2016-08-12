@@ -8,6 +8,9 @@
     %title= current_page.data.title || "Middleman"
     %link{:href => "//fonts.googleapis.com/css?family=Lato:300,400", :rel => "stylesheet", :type => "text/css"}/
     = stylesheet_link_tag :site, 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'
-    = javascript_include_tag :all
+    = javascript_include_tag '//code.jquery.com/jquery-3.1.0.js','//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', :all
   %body{:class => page_classes}
     = yield
+
+
+
